@@ -24,13 +24,13 @@
             <asp:BoundField HeaderText="Fecha de estreno" DataField="Release.Year" ItemStyle-CssClass="text-center"/>
             <asp:BoundField HeaderText="Sinopsis" DataField="Synopsis" ItemStyle-CssClass="w-50"/>
             <asp:BoundField HeaderText="Calificación" DataField="Rating" ItemStyle-CssClass="text-center" />
-            <asp:TemplateField HeaderText="Oscar" >
+            <asp:TemplateField HeaderText="Oscar">
                 <ItemTemplate>
-                    <asp:CheckBox ID="ckbxOscar" runat="server" Enabled="false" Checked='<%# Eval("Oscar") %>' CssClass="form-check ms-3"/>
+                    <asp:CheckBox ID="ckbxOscar" runat="server" Enabled="false" Checked='<%# Eval("Oscar") %>' CssClass="d-block text-center"/>
                 </ItemTemplate>
             </asp:TemplateField>
-            <asp:CommandField HeaderText="Editar" SelectText="" ShowSelectButton="true" ControlStyle-CssClass="bi bi-pencil-square text-dark fs-4 ms-2"/>
-            <asp:CommandField HeaderText="Eliminar" DeleteText="" ShowDeleteButton="true" ControlStyle-CssClass="bi bi-trash-fill text-dark fs-4 ms-3"/>
+            <asp:CommandField HeaderText="Editar" SelectText="" ShowSelectButton="true" ItemStyle-CssClass="text-center" ControlStyle-CssClass="bi bi-pencil-square text-dark fs-4"/>
+            <asp:CommandField HeaderText="Eliminar" DeleteText="" ShowDeleteButton="true" ItemStyle-CssClass="text-center" ControlStyle-CssClass="bi bi-trash-fill text-dark fs-4"/>
         </Columns>
     </asp:GridView>
 </asp:Content>
